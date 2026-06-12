@@ -20,16 +20,25 @@ GLOBAL_VAR_INIT(running_create_and_destroy, FALSE)
 
 	// This code is responsible for splitting up create & destroy across multiple integration tests.
 	var/total_amount_to_check = length(type_paths_to_check)
-	var/runner_count = length(config.maplist)
+	var/list/running_maps = list()
+	var/what_map_index_are_we = 1
+#ifdef CIBUILDING
+	for(var/map_name, _map_config in config.maplist)
+		var/datum/map_config/map_config = _map_config
+		if(map_config.exclude_from_ci)
+			if(SSmapping.current_map.map_name == map_config.map_name)
+				stack_trace("Map is ex")
+			continue
+		running_maps += map_config
+		if(SSmapping.current_map.map_name == map_config.map_name)
+			what_map_index_are_we = length(running_maps)
+#else //Local CI, we only got one runner
+	running_maps += SSmapping.current_map
+#endif
+	var/runner_count = length(running_maps)
 
 	var/split_up_amount = floor(total_amount_to_check / runner_count)
 
-	var/what_map_index_are_we = 1
-	for(var/map_name, _map_config in config.maplist)
-		var/datum/map_config/map_config = _map_config
-		if(SSmapping.current_map.map_name == map_config.map_name)
-			break
-		what_map_index_are_we++
 
 	var/start_index = (what_map_index_are_we - 1) * split_up_amount
 	// Instead of super trying to make it an equal split, we just give the remainder tests to the final runner

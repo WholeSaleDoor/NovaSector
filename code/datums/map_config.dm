@@ -78,6 +78,7 @@
 	var/list/skipped_tests
 	/// If TRUE, only unit tests with UNIT_TEST_DEBUG_MAP_ONLY will run on this map
 	var/is_unit_test_map = FALSE
+	var/exclude_from_ci
 #endif
 
 	/// Boolean that tells SSmapping to load all away missions in the codebase.
@@ -232,6 +233,10 @@
 	// NOVA EDIT ADDITION START - Planetary maps with space access.
 	if ("allow_space_when_planetary" in json)
 		allow_space_when_planetary = json["allow_space_when_planetary"]
+	#ifdef UNIT_TESTS
+	if("exclude_from_ci" in json)
+		exclude_from_ci = exclude_from_ci
+	#endif
 	// NOVA EDIT END
 
 	if ("blacklist_file" in json)
@@ -245,6 +250,7 @@
 
 	if ("bonus_weakpoints" in json)
 		bonus_weakpoints = json["bonus_weakpoints"]
+
 
 
 	allow_custom_shuttles = json["allow_custom_shuttles"] != FALSE
