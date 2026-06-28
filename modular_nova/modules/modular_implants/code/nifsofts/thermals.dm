@@ -13,5 +13,5 @@
 		The Lens represents cutting-edge sensory technology, normally reserved for marksmen and high-value protection details due to its exorbitant cost and strategic advantage in \
 		both urban and wilderness operations."
 	active_cost = 1
-	eyewear_check = TRUE
+	eyewear_check = FALSE
 	added_eyewear_traits = list(TRAIT_THERMAL_VISION)
