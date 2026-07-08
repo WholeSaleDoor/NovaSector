@@ -1,5 +1,5 @@
 /obj/item/gun/ballistic/automatic/tiz_rifle
-	name = "\improper MMR-2543E"
+	name = "\improper Tiziran Flechette Rifle"
 	desc = "A heavy assault rifle chambered in .40 Sol Long, with a decent rate of fire for weapons of its class. Accepts any standard SolFed rifle magazine."
 
 	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/guns48x.dmi'
@@ -22,8 +22,8 @@
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
 
-	accepted_magazine_type = /obj/item/ammo_box/magazine/c40sol_rifle
-	spawn_magazine_type = /obj/item/ammo_box/magazine/c40sol_rifle/standard
+	accepted_magazine_type = /obj/item/ammo_box/magazine/tiz_long_magazine
+	spawn_magazine_type = /obj/item/ammo_box/magazine/tiz_long_magazine/extended
 
 	fire_sound = 'modular_nova/modules/modular_weapons/sounds/rifle_heavy.ogg'
 	suppressed_sound = 'modular_nova/modules/modular_weapons/sounds/suppressed_rifle.ogg'

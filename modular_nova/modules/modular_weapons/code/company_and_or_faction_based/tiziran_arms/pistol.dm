@@ -1,5 +1,5 @@
-/obj/item/gun/ballistic/automatic/pistol/tiziran
-	name = "\improper Guêpe Pistol"
+/obj/item/gun/ballistic/automatic/pistol/tiziran_burst
+	name = "\improper Tiziran Burst Pistol"
 	desc = "The standard issue service pistol of SolFed's various military branches. Uses .35 Sol, and comes with an attached light."
 
 	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/guns32x.dmi'
@@ -9,13 +9,16 @@
 
 	w_class = WEIGHT_CLASS_NORMAL
 
-	accepted_magazine_type = /obj/item/ammo_box/magazine/c35sol_pistol
+	accepted_magazine_type = /obj/item/ammo_box/magazine/tiz_short_magazine
 	special_mags = TRUE
 
 	suppressor_x_offset = 0
 	suppressor_y_offset = 0
 
-	fire_delay = 0.2 SECONDS
+	burst_size = 4
+	burst_delay = 0.5
+	spread = 10
+	actions_types = list(/datum/action/item_action/toggle_firemode)
 
 	lore_blurb = "The Guêpe is an evolution of an older pistol which has seen use for over a century, with incremental \
 		improvements keeping it up to date.<br><br>\
@@ -28,8 +31,8 @@
 		Less savory individuals also appreciate just how easy it is get in full-auto, simply by traveling to a less restrictive jurisdiction, and either \
 		buying a full-auto variant or having it converted."
 
-/obj/item/gun/ballistic/automatic/pistol/tiziran/give_manufacturer_examine()
-	AddElement(/datum/element/manufacturer_examine, COMPANY_TRAPPISTE)
+/obj/item/gun/ballistic/automatic/pistol/tiziran_burst/give_manufacturer_examine()
+	AddElement(/datum/element/manufacturer_examine, COMPANY_TIZIRAN)
 
 /obj/item/gun/ballistic/automatic/pistol/tiziran/add_seclight_point()
 	AddComponent(/datum/component/seclite_attachable, \
@@ -39,3 +42,4 @@
 
 /obj/item/gun/ballistic/automatic/pistol/tiziran/no_mag
 	spawnwithmagazine = FALSE
+
