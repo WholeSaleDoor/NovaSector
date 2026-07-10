@@ -23,3 +23,13 @@
 
 /// Define used for shaded-charge weapons that have firemode-based labels on their icons
 #define SHADED_CHARGE_MODE_LABELED 2
+
+// Standard Talunan short flechettes. Standard pistol/PDW round.
+#define CALIBER_TIZ_SHORT "Talunan Short"
+
+// Standard Talunan medium flechettes. Standard rifle round.
+#define CALIBER_TIZ_LONG "Talunan Long"
+
+// Standard Talunan heavy flechettes. Standard heavy rifle/revolver round.
+#define CALIBER_TIZ_HEAVY "Talunan Heavy"
+

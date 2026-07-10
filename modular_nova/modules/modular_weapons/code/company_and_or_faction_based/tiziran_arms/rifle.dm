@@ -1,6 +1,6 @@
 /obj/item/gun/ballistic/automatic/tiz_rifle
 	name = "\improper Tiziran Flechette Rifle"
-	desc = "A heavy assault rifle chambered in .40 Sol Long, with a decent rate of fire for weapons of its class. Accepts any standard SolFed rifle magazine."
+	desc = "A tiziran assault rifle chambered Talunan long flechettes, sporting a high rate of fire. Accepts any standard Talunan rifle magazine."
 
 	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/guns48x.dmi'
 	icon_state = "infanterie"
@@ -39,6 +39,7 @@
 	spread = 2
 	projectile_wound_bonus = 0
 	projectile_damage_multiplier = 1
+	projectile_speed_multiplier = 1.1
 
 	lore_blurb = "The MMR-2543 is the current standard service rifle for all branches of the Sol Federation Armed Forces.<br><br>\
 		Initially created for use by the Sagittarian Triumvirate's military, its adoption by SolFed came a few years later. \
