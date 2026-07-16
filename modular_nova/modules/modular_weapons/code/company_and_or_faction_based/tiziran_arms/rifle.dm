@@ -1,6 +1,6 @@
 /obj/item/gun/ballistic/automatic/tiz_rifle
 	name = "\improper Tiziran Flechette Rifle"
-	desc = "A tiziran assault rifle chambered Talunan long flechettes, sporting a high rate of fire. Accepts any standard Talunan rifle magazine."
+	desc = "Placeholder text."
 
 	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/guns48x.dmi'
 	icon_state = "infanterie"
@@ -41,18 +41,10 @@
 	projectile_damage_multiplier = 1
 	projectile_speed_multiplier = 1.1
 
-	lore_blurb = "The MMR-2543 is the current standard service rifle for all branches of the Sol Federation Armed Forces.<br><br>\
-		Initially created for use by the Sagittarian Triumvirate's military, its adoption by SolFed came a few years later. \
-		Thanks to both the prestige the weapon gained from being adopted by two of the most prominent military forces in SolFed, \
-		and its modular design making it easily adapted to different requirements, \
-		it is currently the most widely adopted rifle in SolFed with a wide range of different users."
+	lore_blurb = "Placeholder text."
 
 	/// Lore specific to this type of gun.
-	var/model_specific_lore = "This variant is the Espatier model, and is the standard weapon for SolFed's Espatier Corps. \
-		It features a slim and compact design optimized for the close-range engagements \
-		Espatiers typically find themselves in, while still retaining effectiveness at long range. \
-		A computerized sight allows for quick and easy adjustment for engagements at different ranges, \
-		and in a wide range of environments, while a swappable internal heatsink protects the weapon from overheating whilst firing in a vacuum."
+	var/model_specific_lore = "Placeholder text."
 
 /obj/item/gun/ballistic/automatic/tiz_rifle/Initialize(mapload)
 	. = ..()

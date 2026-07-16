@@ -19,7 +19,7 @@
 	AddElement(/datum/element/caseless)
 
 /obj/projectile/bullet/tiziran
-	name = ".40 Sol Long bullet"
+	name = "Base Tiziran Flechette"
 
 	damage = 6
 	armour_penetration = 10

@@ -1,7 +1,7 @@
 // Quirky heavy flechette revolver since we like those. Features a dual magazine with ported features from the bulldog shotgun code.
 /obj/item/gun/ballistic/revolver/tiziran_heavy
 	name = "\improper Tiziran Flechette Revolver"
-	desc = "A small revolver with a long barrel, sporting a dual-feed internal magazine that can support shooting two ammo types."
+	desc = "A small revolver with a long barrel, sporting a dual-feed internal cylinder that can support shooting two ammo types without reloading. Or the same ammo, if you're inclined."
 
 	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/guns32x.dmi'
 	icon_state = "eland"
@@ -21,16 +21,7 @@
 	projectile_damage_multiplier = 0.8
 	projectile_speed_multiplier = 1.1
 
-	lore_blurb = "The Renard is as simple as it looks, trimming down Trappiste's typical extravagance for the sake of its small size.<br><br>\
-		Originally, it was seen as an acceptable backup for SolFed's police forces, \
-		able to be stashed in any manner of pouch, pocket, or even just stuck into your waistband, \
-		while still coming loaded with eight .35 Sol Short rounds. \
-		As SolFed's myriad forces modernized, the Renard began living a second life with executives, bodyguards, and criminals due to its ease of concealment. \
-		If bang for your buck was the focus, you can't do much better then the bare minimum in both cost and size. \
-		There's not a lot to be said about the actual function of the gun either; thanks to a centerline barrel \
-		and being shot from the lowest chamber of the cylinder, the recoil is non-existent, much like the user's safety. \
-		The only out-of-place feature for a budget revolver like this is that the chamber is pressed forward during firing, \
-		forming a seal between cylinder and barrel in a manner that still allows it to be suppressed."
+	lore_blurb = "Placeholder text."
 
 
 
@@ -38,6 +29,7 @@
 	AddElement(/datum/element/manufacturer_examine, COMPANY_TIZIRAN)
 
 /obj/item/ammo_box/magazine/internal/tiziran_heavy
+	name = "Tiziran Revolver Internal Magazine"
 	ammo_type = /obj/item/ammo_casing/tiziran/heavy/steel
 	caliber = CALIBER_TIZ_HEAVY
 	max_ammo = 5

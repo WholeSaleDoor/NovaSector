@@ -9189,6 +9189,7 @@
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\szot_dynamica\ammo\plasma.dm"
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\szot_dynamica\ammo\pulse.dm"
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\szot_dynamica\ammo\rifle.dm"
+#include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\tiziran_arms\dmr.dm"
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\tiziran_arms\pistol.dm"
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\tiziran_arms\revolver.dm"
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\tiziran_arms\rifle.dm"

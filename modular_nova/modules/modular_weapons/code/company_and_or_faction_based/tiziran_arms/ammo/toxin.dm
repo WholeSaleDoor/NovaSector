@@ -38,7 +38,7 @@
 		var/mob/living/victim = target
 		var/hit_limb_zone = victim.check_hit_limb_zone_name(def_zone)
 		var/armour_block = victim.run_armor_check(hit_limb_zone, secondary_armor_flag, armour_penetration = secondary_armour_penetration)
-		// Toxin ONLY applies if the round penetrates fully. What, how else are you going to deliver it if only the metal part survives?
+		// Toxin ONLY applies if the round penetrates fully, how else are you going to deliver it if only the metal part survives?
 		if(armour_block == 0)
 			victim.apply_damage(brute_damage, secondary_damage_type, hit_limb_zone, blocked = armour_block, sharpness = SHARP_POINTY)
 	// Apply damage to all other atoms
@@ -65,13 +65,13 @@
 	armour_penetration = 50
 	// Our toxin damage
 	secondary_damage = 3
-	secondary_armour_penetration = 40
+	secondary_armour_penetration = 35
 
 	demolition_mod = 0.6
 	max_pierces = 5
 
 
-// Short Talunan Milspec Toxin Flechette for pistols and PDWs. Adminbus only. I promise you, this cooks hard.
+// Short Talunan Milspec Toxin Flechette for pistols and PDWs. Adminbus only. Further testing required
 /obj/item/ammo_casing/tiziran/short/milspec_toxin
 	name = "Talunan Short toxin flechette casing"
 	desc = "A Talunan Imperium toxin caseless short round."
@@ -112,12 +112,12 @@
 
 	// Our toxin damage. Should be stopped by BP armor+.
 	secondary_damage = 3
-	secondary_armour_penetration = 50
+	secondary_armour_penetration = 55
 
 	demolition_mod = 0.75
 	max_pierces = 6
 
-// Long Talunan Milspec Toxin Flechette for pistols and PDWs. Adminbus only. I promise you, this cooks harder.
+// Long Talunan Milspec Toxin Flechette for pistols and PDWs.Adminbus only. Further testing required
 /obj/item/ammo_casing/tiziran/long/milspec_toxin
 	name = "Talunan Long toxin flechette casing"
 	desc = "A Talunan Imperium toxin caseless long round."
@@ -163,7 +163,7 @@
 
 	icon_state = "35box"
 
-	caliber = CALIBER_SOL35SHORT
+	caliber = CALIBER_TIZ_SHORT
 	ammo_type = /obj/item/ammo_casing/tiziran/short/toxin
 	max_ammo = 40
 
@@ -173,7 +173,7 @@
 
 	icon_state = "35box"
 
-	caliber = CALIBER_SOL35SHORT
+	caliber = CALIBER_TIZ_SHORT
 	ammo_type = /obj/item/ammo_casing/tiziran/short/milspec_toxin
 	max_ammo = 40
 
@@ -183,7 +183,7 @@
 
 	icon_state = "35box"
 
-	caliber = CALIBER_SOL35SHORT
+	caliber = CALIBER_TIZ_LONG
 	ammo_type = /obj/item/ammo_casing/tiziran/long/toxin
 	max_ammo = 60
 
@@ -193,6 +193,6 @@
 
 	icon_state = "35box"
 
-	caliber = CALIBER_SOL35SHORT
+	caliber = CALIBER_TIZ_LONG
 	ammo_type = /obj/item/ammo_casing/tiziran/long/milspec_toxin
 	max_ammo = 60
