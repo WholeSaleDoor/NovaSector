@@ -91,3 +91,19 @@
 	ammo_type = /obj/item/ammo_casing/tiziran/heavy/steel
 	caliber = CALIBER_TIZ_HEAVY
 	max_ammo = 15
+
+
+// Specialized plasma flechette rounds. For the LARP within you.
+/obj/item/ammo_box/magazine/tiz_special_plasma
+	name = "\improper Tiziran Plasma Flechette Magazine"
+	desc = "A magazine for Tiziran rifles, holds 7 rounds."
+
+	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/ammo.dmi'
+	icon_state = "rifle_short"
+
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	w_class = WEIGHT_CLASS_TINY
+
+	ammo_type = /obj/item/ammo_casing/tiziran/special/plasma
+	caliber = CALIBER_TIZ_SPECIAL_PLASMA
+	max_ammo = 7

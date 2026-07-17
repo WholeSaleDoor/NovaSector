@@ -25,27 +25,18 @@
 /obj/projectile/bullet/tiziran/toxin/on_hit(atom/target, blocked = 0, pierce_hit)
 	. = ..()
 
-	// Calculate damage multiplier from the gun
-	var/proj_damage_mult = 1
-	if(fired_from && istype(fired_from, /obj/item/gun))
-		var/obj/item/gun/gun = fired_from
-		proj_damage_mult = gun.projectile_damage_multiplier
-
-	var/brute_damage = secondary_damage * proj_damage_mult
-
-
 	if(isliving(target))
 		var/mob/living/victim = target
 		var/hit_limb_zone = victim.check_hit_limb_zone_name(def_zone)
 		var/armour_block = victim.run_armor_check(hit_limb_zone, secondary_armor_flag, armour_penetration = secondary_armour_penetration)
 		// Toxin ONLY applies if the round penetrates fully, how else are you going to deliver it if only the metal part survives?
 		if(armour_block == 0)
-			victim.apply_damage(brute_damage, secondary_damage_type, hit_limb_zone, blocked = armour_block, sharpness = SHARP_POINTY)
+			victim.apply_damage(secondary_damage, secondary_damage_type, hit_limb_zone, blocked = armour_block, sharpness = SHARP_POINTY)
 	// Apply damage to all other atoms
 	else if(isatom(target))
 		var/atom/atom_target = target
 		if(atom_target.uses_integrity)
-			atom_target.take_damage(brute_damage, secondary_damage_type, secondary_armor_flag, secondary_armour_penetration)
+			atom_target.take_damage(secondary_damage, secondary_damage_type, secondary_armor_flag, secondary_armour_penetration)
 
 
 

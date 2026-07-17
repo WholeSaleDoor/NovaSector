@@ -79,7 +79,7 @@
 	magazine = alternative_magazine
 	secondary_magazine = primary_magazine
 
-	// Keep track of which magazine we're on since we have two.
+	// Keep track of which magazine we're on since we have two and it'd be a pain in the ass.
 	if (current_magazine == 0)
 		balloon_alert(user, "Swapped to secondary mag")
 		current_magazine = 1

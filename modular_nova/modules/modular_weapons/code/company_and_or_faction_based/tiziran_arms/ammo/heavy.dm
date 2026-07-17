@@ -19,14 +19,14 @@
 	wound_bonus = 5
 	exposed_wound_bonus = 10
 
-// Heavy plastic flechette. More of a stamina damage round.
-/obj/item/ammo_casing/tiziran/heavy/plastic
+// Heavy rubber flechette. More of a stamina damage round.
+/obj/item/ammo_casing/tiziran/heavy/rubber
 	name = "Talunan Heavy plastic flechette casing"
 	desc = "A Talunan Imperium plastic caseless heavy round."
 	icon_state = "980_gas"
-	projectile_type = /obj/projectile/bullet/tiziran/heavy/plastic
+	projectile_type = /obj/projectile/bullet/tiziran/heavy/rubber
 
-/obj/projectile/bullet/tiziran/heavy/plastic
+/obj/projectile/bullet/tiziran/heavy/rubber
 	name = "Heavy Plastic Flechette"
 
 	damage = 6
