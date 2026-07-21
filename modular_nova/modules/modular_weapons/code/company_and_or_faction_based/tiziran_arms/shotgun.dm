@@ -5,8 +5,8 @@
 	spawn_blacklisted = TRUE
 	pin = null
 	bolt_type = BOLT_TYPE_NO_BOLT
-	// It'll be pretty strong burst damage without this.
-	projectile_damage_multiplier = 0.8
+	// It'll be really strong burst damage without this.
+	projectile_damage_multiplier = 0.7
 	pin = /obj/item/firing_pin
 
 /obj/item/gun/ballistic/rifle/tribarrel/item_interaction(mob/living/user, obj/item/tool, list/modifiers)

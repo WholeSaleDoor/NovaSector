@@ -26,7 +26,7 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/tiz_heavy_magazine
 	spawn_magazine_type = /obj/item/ammo_box/magazine/tiz_heavy_magazine
 
-	fire_sound = 'modular_nova/modules/modular_weapons/sounds/rifle_heavy.ogg'
+	fire_sound = 'sound/items/weapons/gun/rifle/shot_heavy.ogg'
 	suppressed_sound = 'modular_nova/modules/modular_weapons/sounds/suppressed_rifle.ogg'
 	can_suppress = TRUE
 

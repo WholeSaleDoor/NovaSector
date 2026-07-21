@@ -20,7 +20,7 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/tiz_short_magazine
 	spawn_magazine_type = /obj/item/ammo_box/magazine/tiz_short_magazine/large_capacity
 
-	fire_sound = 'modular_nova/modules/modular_weapons/sounds/smg_light.ogg'
+	fire_sound = 'sound/items/weapons/gun/smg/shot.ogg'
 	can_suppress = TRUE
 
 	suppressor_x_offset = 11
@@ -68,13 +68,12 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/tiz_short_magazine
 	spawn_magazine_type = /obj/item/ammo_box/magazine/tiz_short_magazine/large_capacity
 
-	fire_sound = 'modular_nova/modules/modular_weapons/sounds/smg_light.ogg'
+	fire_sound = 'sound/items/weapons/gun/smg/shot.ogg'
 	can_suppress = TRUE
 
 	suppressor_x_offset = 11
 
-	burst_size = 1
-	fire_delay = 0.11 SECONDS
+	fire_delay = 0.10 SECONDS
 	projectile_speed_multiplier = 1.1
 
 	spread = 7.5

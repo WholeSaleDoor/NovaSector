@@ -25,7 +25,7 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/tiz_long_magazine
 	spawn_magazine_type = /obj/item/ammo_box/magazine/tiz_long_magazine/extended
 
-	fire_sound = 'modular_nova/modules/modular_weapons/sounds/rifle_heavy.ogg'
+	fire_sound = 'sound/items/weapons/gun/smg/shot.ogg'
 	suppressed_sound = 'modular_nova/modules/modular_weapons/sounds/suppressed_rifle.ogg'
 	can_suppress = TRUE
 
@@ -48,11 +48,6 @@
 
 /obj/item/gun/ballistic/automatic/tiz_rifle/Initialize(mapload)
 	. = ..()
-
-	give_autofire()
-
-/// Separate proc for handling auto fire just because one of these subtypes isn't otomatica
-/obj/item/gun/ballistic/automatic/tiz_rifle/proc/give_autofire()
 	AddComponent(/datum/component/automatic_fire, fire_delay)
 
 /obj/item/gun/ballistic/automatic/tiz_rifle/give_manufacturer_examine()
