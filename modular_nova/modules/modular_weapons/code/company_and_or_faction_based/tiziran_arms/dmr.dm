@@ -23,8 +23,7 @@
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
 
-	accepted_magazine_type = /obj/item/ammo_box/magazine/tiz_heavy_magazine
-	spawn_magazine_type = /obj/item/ammo_box/magazine/tiz_heavy_magazine
+	accepted_magazine_type = /obj/item/ammo_box/magazine/tiziran/heavy
 
 	fire_sound = 'sound/items/weapons/gun/rifle/shot_heavy.ogg'
 	suppressed_sound = 'modular_nova/modules/modular_weapons/sounds/suppressed_rifle.ogg'

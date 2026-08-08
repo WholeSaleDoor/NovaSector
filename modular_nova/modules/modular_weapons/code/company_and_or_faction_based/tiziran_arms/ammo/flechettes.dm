@@ -4,7 +4,7 @@
 	desc = "Insert name here."
 
 	// This is where the casing icons go.
-	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/ammo.dmi'
+	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/tiziran_arms/ammo.dmi'
 	icon_state = "40sol"
 
 	// This is the ammo details.
@@ -20,6 +20,8 @@
 
 /obj/projectile/bullet/tiziran
 	name = "Base Tiziran Flechette"
+	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/tiziran_arms/projectiles.dmi'
+	icon_state = "flechette_metal"
 
 	damage = 6
 	armour_penetration = 10

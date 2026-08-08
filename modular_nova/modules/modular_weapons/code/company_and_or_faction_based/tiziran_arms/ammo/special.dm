@@ -1,7 +1,6 @@
 /obj/projectile/bullet/tiziran/special_plasma
 	name = "Plasma Flechette"
-	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/szot_dynamica/ammo.dmi'
-	icon_state = "plasma_pulse"
+	icon_state = "flechette_plasma"
 	damage = 5
 	stamina = 5
 	wound_bonus = 5

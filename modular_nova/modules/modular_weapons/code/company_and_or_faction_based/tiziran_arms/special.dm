@@ -26,8 +26,7 @@
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
 
-	accepted_magazine_type = /obj/item/ammo_box/magazine/tiz_special_plasma
-	spawn_magazine_type = /obj/item/ammo_box/magazine/tiz_special_plasma
+	accepted_magazine_type = /obj/item/ammo_box/magazine/tiziran/plasma
 
 	fire_sound = 'modular_nova/modules/modular_weapons/sounds/pulse_shoot.ogg'
 	fire_sound_volume = 70

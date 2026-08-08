@@ -3,7 +3,7 @@
 	name = "A Talunan Imperium flechette."
 	desc = "A Talunan Imperium plastic caseless short round."
 
-	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/ammo.dmi'
+	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/tiziran_arms/ammo.dmi'
 	icon_state = "35sol"
 
 	caliber = CALIBER_TIZ_SHORT

@@ -1,7 +1,6 @@
 /obj/projectile/bullet/tiziran/toxin
 	name = "Talunan Toxin Flechette"
-	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/szot_dynamica/ammo.dmi'
-	icon_state = "plasma_pulse"
+	icon_state = "flechette_tox"
 	damage = 5
 	stamina = 5
 	wound_bonus = 5
@@ -11,7 +10,7 @@
 	// While this ammo is generally plasteel+ grade, we don't actually want this to pass through mobs. Then it'd be WAY too good.
 	projectile_piercing = PASSGLASS|PASSGRILLE
 
-	///Credit to the original author of the pulse rifle code :3
+	///Credit to the original author of the pulse rifle code luv u stalkeros :3
 	///Which damage type do we deal as a secondary effect?
 	var/secondary_damage_type = TOX
 	///How much secondary damage do we deal?
@@ -29,7 +28,7 @@
 		var/mob/living/victim = target
 		var/hit_limb_zone = victim.check_hit_limb_zone_name(def_zone)
 		var/armour_block = victim.run_armor_check(hit_limb_zone, secondary_armor_flag, armour_penetration = secondary_armour_penetration)
-		// Toxin ONLY applies if the round penetrates fully, how else are you going to deliver it if only the metal part survives?
+		// Toxin ONLY applies if the round penetrates fully, how else are you going to deliver it?
 		if(armour_block == 0)
 			victim.apply_damage(secondary_damage, secondary_damage_type, hit_limb_zone, blocked = armour_block, sharpness = SHARP_POINTY)
 	// Apply damage to all other atoms
@@ -108,7 +107,7 @@
 	demolition_mod = 0.75
 	max_pierces = 6
 
-// Long Talunan Milspec Toxin Flechette for pistols and PDWs.Adminbus only. Further testing required
+// Long Talunan Milspec Toxin Flechette for pistols and PDWs. Adminbus only. Further testing required
 /obj/item/ammo_casing/tiziran/long/milspec_toxin
 	name = "Talunan Long toxin flechette casing"
 	desc = "A Talunan Imperium toxin caseless long round."
@@ -141,7 +140,7 @@
 	name = "ammo box (talunan toxin)"
 	desc = "A box of talunan rounds."
 
-	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/ammo.dmi'
+	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/tiziran_arms/ammo.dmi'
 
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 

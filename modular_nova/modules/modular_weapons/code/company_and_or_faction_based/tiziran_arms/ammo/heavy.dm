@@ -2,7 +2,6 @@
 	name = "A Talunan Imperium flechette."
 	desc = "A Talunan Imperium plastic caseless long round."
 
-	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/ammo.dmi'
 	icon_state = "980_gas"
 
 	caliber = CALIBER_TIZ_HEAVY
@@ -10,6 +9,7 @@
 
 /obj/projectile/bullet/tiziran/heavy
 	name = "Talunan Long Flechette"
+	icon_state = "heavy_flechette_metal"
 
 	damage = 5
 	armour_penetration = 10

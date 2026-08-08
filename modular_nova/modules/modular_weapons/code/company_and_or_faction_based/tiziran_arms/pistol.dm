@@ -2,17 +2,17 @@
 	name = "\improper Tiziran Burst Pistol"
 	desc = "Placeholder text."
 
-	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/guns32x.dmi'
-	icon_state = "wespe"
+	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/tiziran_arms/guns32x.dmi'
+	icon_state = "slesu_ikozuzzs"
 
 	fire_sound = 'modular_nova/modules/modular_weapons/sounds/pistol_light.ogg'
 
 	w_class = WEIGHT_CLASS_NORMAL
 
-	accepted_magazine_type = /obj/item/ammo_box/magazine/tiz_short_magazine
+	accepted_magazine_type = /obj/item/ammo_box/magazine/tiziran/short
 	special_mags = TRUE
 
-	suppressor_x_offset = 0
+	suppressor_x_offset = 12
 	suppressor_y_offset = 0
 
 	burst_size = 4
@@ -25,12 +25,12 @@
 /obj/item/gun/ballistic/automatic/pistol/tiziran_burst/give_manufacturer_examine()
 	AddElement(/datum/element/manufacturer_examine, COMPANY_TIZIRAN)
 
-/obj/item/gun/ballistic/automatic/pistol/tiziran/add_seclight_point()
+/obj/item/gun/ballistic/automatic/pistol/tiziran_burst/add_seclight_point()
 	AddComponent(/datum/component/seclite_attachable, \
 		starting_light = new /obj/item/flashlight/seclite(src), \
 		is_light_removable = FALSE, \
 		)
 
-/obj/item/gun/ballistic/automatic/pistol/tiziran/no_mag
+/obj/item/gun/ballistic/automatic/pistol/tiziran_burst/no_mag
 	spawnwithmagazine = FALSE
 
