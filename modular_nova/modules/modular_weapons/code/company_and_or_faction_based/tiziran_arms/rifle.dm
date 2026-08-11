@@ -3,7 +3,7 @@
 	desc = "Placeholder text."
 
 	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/tiziran_arms/guns48x.dmi'
-	icon_state = "tiziran_rifle_m2"
+	icon_state = "zluol_l2"
 
 	worn_icon = 'modular_nova/modules/modular_weapons/icons/mob/company_and_or_faction_based/carwo_defense_systems/guns_worn.dmi'
 	worn_icon_state = "infanterie"

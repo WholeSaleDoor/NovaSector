@@ -3,8 +3,8 @@
 	name = "\improper Tiziran Heavy Flechette Rifle"
 	desc = "Placeholder text."
 
-	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/veldjen-kuiper_armories/guns48x.dmi'
-	icon_state = "infanterie"
+	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/tiziran_arms/guns48x.dmi'
+	icon_state = "aroz_l1"
 
 	worn_icon = 'modular_nova/modules/modular_weapons/icons/mob/company_and_or_faction_based/veldjen-kuiper_armories/guns_worn.dmi'
 	worn_icon_state = "infanterie"

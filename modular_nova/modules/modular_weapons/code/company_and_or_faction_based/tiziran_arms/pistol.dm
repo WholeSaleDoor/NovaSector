@@ -3,7 +3,7 @@
 	desc = "Placeholder text."
 
 	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/tiziran_arms/guns32x.dmi'
-	icon_state = "slesu_ikozuzzs"
+	icon_state = "ikozuzzs"
 
 	fire_sound = 'modular_nova/modules/modular_weapons/sounds/pistol_light.ogg'
 

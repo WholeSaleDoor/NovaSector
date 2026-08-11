@@ -1,5 +1,5 @@
 // Define the barrel for the rifle part of a combination shotgun and all the functions
-// This was a pain in the ass
+// This was a bit of a pain and I am open to different ways of doing it
 /obj/item/gun/ballistic/rifle/tribarrel
 	name = "combination gun rifle barrel"
 	spawn_blacklisted = TRUE
@@ -66,12 +66,19 @@
 
 // Shared traits between both shotguns.
 /obj/item/gun/ballistic/shotgun/doublebarrel/tiziran
+	name = "Raroir_zso Triple Barrel Shotgun"
+	desc = "An ornate shotgun featuring two standard Sol shotgun barrels, alongside a third rifle barrel for rifle rounds depending on the variant.\
+	This is modeled after a very rare limited run Tiziran shotgun possessed by very wealthy nobles, it even includes the gold and silver.\"
+	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/tiziran_arms/guns48x.dmi'
 	can_be_sawn_off = FALSE
+
 
 // The actual shotguns themselves
 
-// Tiziran heavy flechette variant
+// Tiziran heavy flechette variant. Functionally identical to the DB otherwise.
 /obj/item/gun/ballistic/shotgun/doublebarrel/tiziran/flechette
+	icon_state = "raroir_zso"
+	desc += "This one has a flechette rifle barrel."
 	/// Attached rifle barrel
 	var/obj/item/gun/ballistic/rifle/tribarrel/flechette/underbarrel
 
@@ -97,8 +104,10 @@
 	return ..()
 
 
-// Strilka Variant
+// Strilka Variant. Functionally identical to the DB otherwise.
 /obj/item/gun/ballistic/shotgun/doublebarrel/tiziran/strilka
+	icon_state = "raroir_zso"
+	desc += "This one has a strilka rifle barrel."
 	/// Attached rifle barrel
 	var/obj/item/gun/ballistic/rifle/tribarrel/strilka/underbarrel
 

@@ -3,8 +3,8 @@
 	name = "\improper Tiziran Flechette Revolver"
 	desc = "A small revolver with a long barrel, sporting a dual-feed internal cylinder that can support shooting two ammo types without reloading. Or the same ammo, if you're inclined."
 
-	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/guns32x.dmi'
-	icon_state = "eland"
+	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/tiziran_arms/guns32x.dmi'
+	icon_state = "zezokuul"
 
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/tiziran_heavy
 
